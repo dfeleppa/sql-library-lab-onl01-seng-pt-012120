@@ -26,4 +26,4 @@ INSERT INTO characters (id, name, motto, species, author_id) VALUES
 -- (5, "Bella Swan", "I like the night...", "Human", 2),
 -- (6, "Edward Cullen", "You are my life now.", "Vampire", 2),
 -- (7, "Jacob Black", "As long as you like me the best...", "Wolf", 2),
-(8, " Jane", "Either we let them do what they were created for, or we end them.", "Vampire", 2);
+(8, "Jane", "Either we let them do what they were created for, or we end them.", "Vampire", 2);
