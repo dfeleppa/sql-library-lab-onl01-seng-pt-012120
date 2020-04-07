@@ -21,8 +21,8 @@ INSERT INTO books (id, title, year, series_id) VALUES
 INSERT INTO characters (id, name, motto, species, author_id) VALUES
 (1, "Harry Potter", "Time will not slow down when something unpleasant lies ahead.", "half-blood wizard", 1),
 (2, "Hermione Granger", "It's leviOsa, not levioSA", "muggle-born wizard", 1),
--- (3, "Rubeus Hagrid", "I am what I am, an' I'm not ashamed...", "part-human", 1),
--- (4, "Albus Dumbledore", "To the well-organized mind, death is but the next great adventure.", "half-blood wizard" 1),
+(3, "Rubeus Hagrid", "I am what I am, an' I'm not ashamed...", "part-human", 1),
+(4, "Albus Dumbledore", "To the well-organized mind, death is but the next great adventure.", "half-blood wizard", 1),
 (5, "Bella Swan", "I like the night...", "Human", 2),
 (6, "Edward Cullen", "You are my life now.", "Vampire", 2),
 (7, "Jacob Black", "As long as you like me the best...", "Wolf", 2),
