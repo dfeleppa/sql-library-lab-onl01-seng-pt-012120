@@ -23,6 +23,13 @@ def select_character_names_and_number_of_books_they_are_in
   "Write your SQL query here"
 end
 
+# CREATE TABLE series (id  INTEGER PRIMARY KEY, title TEXT, author_id INTEGER, subgenre_id INTEGER);
+# CREATE TABLE subgenres(id  INTEGER PRIMARY KEY, name TEXT);
+# CREATE TABLE authors(id  INTEGER PRIMARY KEY, name TEXT);
+# CREATE TABLE books (id  INTEGER PRIMARY KEY, title TEXT, year INTEGER, series_id);
+# CREATE TABLE characters (id  INTEGER PRIMARY KEY, name TEXT, motto TEXT, species TEXT, author_id INTEGER);
+# CREATE TABLE character_books (id INTEGER PRIMARY KEY, character_id INTEGER, book_id INTEGER);
+
 # def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
 #   "SELECT projects.title, SUM(amount) FROM pledges INNER JOIN projects ON pledges.project_id = projects.id GROUP BY projects.title"
 # end
