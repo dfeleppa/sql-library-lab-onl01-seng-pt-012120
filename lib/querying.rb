@@ -1,12 +1,3 @@
-
-# def select_books_titles_and_years_in_first_series_order_by_year
-#   "SELECT books.title, books.year FROM books
-#     INNER JOIN series
-#       ON books.series_id = series.id
-#     WHERE series.id = 1
-#     ORDER BY books.year;"
-# end
-  
 def select_books_titles_and_years_in_first_series_order_by_year
   "SELECT title, year FROM books WHERE series_id = 1"
 end
@@ -51,9 +42,9 @@ end
 
 
 
-# def select_name_and_motto_of_char_with_longest_motto
-#   "SELECT name, motto FROM characters ORDER BY LENGTH(motto) DESC LIMIT 1"
-# end
+def select_name_and_motto_of_char_with_longest_motto
+  "SELECT name, motto FROM characters ORDER BY LENGTH(motto) DESC LIMIT 1"
+end
 
 # def select_value_and_count_of_most_prolific_species
 #   "SELECT species, count(species) FROM characters GROUP BY species ORDER BY COUNT(species) DESC LIMIT 1"
