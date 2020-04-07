@@ -10,13 +10,13 @@ INSERT INTO authors(id, name) VALUES
 (1, "J. K. Rowling"),
 (2, "Stephenie Meyer");
 
--- INSERT INTO books (id, title, year, series_id) VALUES
--- (1, "Harry Potter. The Philosopher's Stone", 1997, 1),
--- (2, "The Chamber of Secrets", 1998, 1),
--- (3, "The Prisoner of Azkaban", 1999, 1),
--- (4, "Twilight", 2005, 2),
--- (5, "New Moon", 2006, 2),
--- (6, "Eclipse", 2007, 2);
+INSERT INTO books (id, title, year, series_id) VALUES
+(1, "Harry Potter. The Philosopher's Stone", 1997, 1),
+(2, "The Chamber of Secrets", 1998, 1),
+(3, "The Prisoner of Azkaban", 1999, 1),
+(4, "Twilight", 2005, 2),
+(5, "New Moon", 2006, 2),
+(6, "Eclipse", 2007, 2);
 
 INSERT INTO characters (id, name, motto, species, author_id) VALUES
 (1, "Harry Potter", "Time will not slow down when something unpleasant lies ahead.", "half-blood wizard", 1),
