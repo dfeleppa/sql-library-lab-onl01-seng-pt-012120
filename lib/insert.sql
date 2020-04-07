@@ -27,3 +27,20 @@ INSERT INTO characters (id, name, motto, species, author_id) VALUES
 (6, "Edward Cullen", "You are my life now.", "Vampire", 2),
 (7, "Jacob Black", "As long as you like me the best...", "Wolf", 2),
 (8, "Jane", "Either we let them do what they were created for, or we end them.", "Vampire", 2);
+
+INSERT INTO character_books (book_id, character_id) VALUES (1, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (3, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (1, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (3, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 3);
+INSERT INTO character_books (book_id, character_id) VALUES (3, 4);
+INSERT INTO character_books (book_id, character_id) VALUES (4, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (5, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (6, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (4, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (5, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (6, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (5, 7);
+INSERT INTO character_books (book_id, character_id) VALUES (6, 8);
