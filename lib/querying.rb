@@ -20,50 +20,22 @@ end
 
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, subgenres.name FROM series
-  
-  JOIN authors ON series.author_id = authors.id JOIN subgenres ON series.subgenre_id = subgenres.id"
+  INNER JOIN authors ON series.author_id = authors.id
+  INNERJOIN subgenres ON series.subgenre_id = subgenres.id"
 end
 
 def select_series_title_with_most_human_characters
-
-      "SELECT title FROM series
+  "SELECT title FROM series
   JOIN characters ON series.author_id = characters.author_id
-   WHERE characters.species = 'human'
-   GROUP BY series.title
-   ORDER BY COUNT(characters.species) DESC LIMIT 1"
+  WHERE characters.species = 'human'
+  GROUP BY series.title
+  ORDER BY COUNT(characters.species) DESC LIMIT 1"
 end
 
 def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name, COUNT(character_books.book_id) AS num_books FROM character_books
-    INNER JOIN characters
-      ON character_books.character_id = characters.id
-    GROUP BY characters.name
-    ORDER BY num_books DESC;"
+   INNER JOIN characters
+   ON character_books.character_id = characters.id
+   GROUP BY characters.name
+   ORDER BY num_books DESC;"
 end
-
-
-
-
-
-
-
-def select_name_and_series_subgenres_of_authors
-  "SELECT authors.name, subgenres.name from series
-  JOIN authors ON series.author_id = authors.id JOIN subgenres ON series.subgenre_id = subgenres.id"
-end
-
-# def select_series_title_with_most_human_characters
-#   "SELECT title FROM series
-#   JOIN characters ON series.author_id = characters.author_id
-#   WHERE characters.species = 'human'
-#   GROUP BY series.title
-#   ORDER BY COUNT(characters.species) DESC LIMIT 1"
-# end
-
-# def select_character_names_and_number_of_books_they_are_in
-#   "SELECT name, COUNT(character_books.id) FROM characters
-#   JOIN character_books ON characters.id = character_books.character_id
-#   GROUP BY name
-#   ORDER BY COUNT(character_books.id) DESC
-#   "
-# end
